@@ -1,0 +1,340 @@
+<html>
+
+<head>
+<title>Dorian Gray Applet II - PARAMETERS</title>
+</head>
+
+<body bgcolor="#000000" text="#FFFFFF" link="#FF0000" vlink="#FF0000">
+
+<p align="center"><strong><font face="Arial">The Dorian Gray Applet II - Parameters and
+examples</font></strong></p>
+
+<p align="center"><small><font face="Arial">[ <a
+href="#Reflection from images - Html syntax">Reflection from images</a> | <a
+href="#The basic parameters">Main params</a> | <a href="#The  6 reflection modes">Reflection
+modes</a> | <a href="#sped">Speed and frames</a> | <a href="#status">Status bar</a> | <a
+href="#sound">Sound</a> | <a href="#link">Links</a> ]</font></small></p>
+<div align="center"><center>
+
+<table border="0" cellpadding="2" cellspacing="0">
+  <tr>
+    <td><p align="center"><a name="Reflection from images - Html syntax"><font face="Arial"><strong>Reflection
+    from images - Html syntax</strong></font></a></p>
+    <p><font face="Arial"><small><strong>Example: </strong><br>
+    <font color="#FF0000">Attention</font> the non breaking space in the second line
+    (&amp;nbsp;)<br>
+    is optional. You need it to aling the applet and the image if you are<br>
+    not using tables. Sometimes you need it, sometimes you don't - depending</small><br>
+    <small>on your layout. Hint: before the &amp;nbsp; close any open font tags.</small><br>
+    <br>
+    <small>&lt;center&gt;&lt;img src=&quot;image.jpg&quot; width=&quot;189&quot;
+    height=&quot;201&quot;&gt;&lt;br&gt;</small><br>
+    <small><font color="#FF0000">&amp;nbsp;</font>&lt;applet
+    code=&quot;DorianGray_II.class&quot; width=&quot;189&quot; height=&quot;210&quot;&gt;</small><br>
+    <small>&lt;param name=&quot;image&quot; value=&quot;astarte_r.jpg&quot;&gt;</small><br>
+    <small>&lt;param name=&quot;bgcolor&quot; value=&quot;000000&quot;&gt;</small><br>
+    <small>&lt;param name=&quot;loadtext&quot; value=&quot;Loading reflection&quot;&gt;</small><br>
+    <small>&lt;param name=&quot;textcolor&quot; value=&quot;ff0000&quot;&gt;</small><br>
+    <small>&lt;param name=&quot;mode&quot; value=&quot;0&quot;&gt;</small><br>
+    <small>&lt;param name=&quot;speed&quot; value=&quot;0&quot;&gt;</small><br>
+    <small>&lt;param name=&quot;frames&quot; value=&quot;0&quot;&gt;</small><br>
+    <small>&lt;param name=&quot;status&quot; value=&quot;Welcome to the Dorian Gray Applet
+    II&quot;&gt;</small><br>
+    <small>&lt;param name=&quot;outtext&quot; value=&quot;Mail me if you like it ...&quot;&gt;</small><br>
+    <small>&lt;param name=&quot;intext&quot; value=&quot;</small></font>Click me, and you
+    might hear something...<font face="Arial"><small>&quot;&gt;</small><br>
+    <small>&lt;param name=&quot;text&quot; value=&quot;Hey, why are you clicking me
+    ?#?!...&quot;&gt;</small><br>
+    <small>&lt;param name=&quot;sound&quot; value=&quot;hiphop8.au&quot;&gt;</small><br>
+    <small>&lt;param name=&quot;href&quot; value=&quot;http://www.disney.com&quot;&gt;</small><br>
+    <small>&lt;param name=&quot;target&quot; value=&quot;_self&quot;&gt;</small><br>
+    <font color="#FFFF00"><small>TEXT FOR NON JAVA BROWSERS</small></font><br>
+    <small>&lt;/applet&gt;</small><br>
+    <small>&lt;/center&gt;</small></font></p>
+    <p><small><font face="Arial"><font color="#FF0000">Attention</font>: the <a href="#link"><font
+    color="#FFFF00">href</font></a> parameter disables the <a href="#sound"><font
+    color="#FFFF00">sound</font></a> parameter !</font></small></td>
+    <td align="center"><img src="exampl_n1.jpg" width="200" height="153"
+    alt="exampl_n1.jpg (16065 bytes)"><br>
+    &nbsp; 
+    <applet code="DorianGray_II.class" width="200" height="200">
+      <param name="href" value="parameters.htm">
+      <param name="image" value="exampl_n.jpg">
+      <param name="mode" value="0">
+      <param name="sound" value="hiphop8.au">
+    </applet>
+    </td>
+  </tr>
+</table>
+</center></div>
+
+<p align="left">&nbsp;</p>
+<div align="center"><center>
+
+<table border="0" cellpadding="2" cellspacing="0">
+  <tr>
+    <td><p align="center"><a name="The basic parameters"><strong><font face="Arial">The main
+    parameters</font></strong></a></p>
+    <p><font face="Arial"><font color="#FFFF00"><small>&lt;applet
+    code=&quot;DorianGray_II.class&quot; width=&quot;189&quot; height=&quot;210&quot;&gt;</small></font><br>
+    <small>The applet code. If you have it at another adress you can add a codebase=<font
+    color="#FF0000">&quot;http://whatever.com&quot;</font>.</small><br>
+    <small>The size should be the same width as your picture, but 50 pixels less in height.
+    you should edit your</small><br>
+    <small>picture so you would have at least a 50 pixel high zone at the top in background
+    color. (you'll understand</small><br>
+    <small>why if you dont. I'll fix the bug in version III. (As MS says, its not a bug, its a
+    feature)</small></font></p>
+    <p><font face="Arial"><font color="#FFFF00"><small>&lt;param name=&quot;image&quot;
+    value=&quot;picture.jpg&quot;&gt;</small></font><br>
+    <small>The image name... gif or jpg supported. See upper paragraph for sizing.</small><br>
+    <small>If you want to reflect a picture like in the example above, you put it straight
+    with the extra 50 pixels above.</small><br>
+    <small>if you want it like in the examples below, you flip it around, (with the head
+    down). You add the 50 pixels above</small><br>
+    <small>again - after you have flipped it. </small></font></p>
+    <p><font face="Arial"><font color="#FFFF00"><small>&lt;param name=&quot;bgcolor&quot;
+    value=&quot;000000&quot;&gt;</small></font><br>
+    <small>This is the background color while your applet is loading.. <font color="#FFFFFF">default
+    is black</font>.</small></font></p>
+    <p><font face="Arial" color="#FFFF00"><small>&lt;param name=&quot;loadtext&quot;
+    value=&quot;Loading reflection&quot;&gt;</small><br>
+    </font><font face="Arial" color="#FFFFFF"><small>This is the text that appears while the
+    image is loading.. default is:&quot;loading reflection&quot;</small></font></p>
+    <p><font face="Arial" color="#FFFF00"><small>&lt;param name=&quot;textcolor&quot;
+    value=&quot;ff0000&quot;&gt;</small><br>
+    </font><font face="Arial" color="#FFFFFF"><small>This is the color of the text that
+    appears before image is loading.. default is: red</small></font></td>
+  </tr>
+</table>
+</center></div>
+
+<p align="center">&nbsp;</p>
+<div align="center"><center>
+
+<table border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td colspan="3" align="center"><a name="The  6 reflection modes"><big><font face="Arial">The
+    &nbsp; 6 reflection modes</font></big></a><p align="left"><font face="Arial"
+    color="#FFFF00"><small>&lt;param name=&quot;mode&quot; value=&quot;0&quot;&gt;</small><br>
+    </font><font face="Arial" color="#FFFFFF"><small>If no mode parameter is specified,
+    default is mode is mode=0 (no parameter tag required)</small></font><font face="Arial"><br>
+    </font></td>
+  </tr>
+  <tr>
+    <td align="center"><font face="Arial"><strong>mode = 0</strong></font><br>
+    <applet code="DorianGray_II.class" width="200" height="200">
+      <param name="image" value="exampl_n2.jpg">
+      <param name="mode" value="0">
+      <param name="sound" value="hiphop8.au">
+    </applet>
+    </td>
+    <td align="center"><font face="Arial"><strong>mode = 1</strong></font><br>
+    <applet code="DorianGray_II.class" width="200" height="200">
+      <param name="image" value="exampl_n2.jpg">
+      <param name="mode" value="1">
+      <param name="sound" value="hiphop8.au">
+    </applet>
+    </td>
+    <td align="center"><strong><font face="Arial">mode = 2</font></strong><br>
+    <applet code="DorianGray_II.class" width="200" height="200">
+      <param name="image" value="exampl_n2.jpg">
+      <param name="mode" value="2">
+      <param name="sound" value="hiphop8.au">
+    </applet>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><font face="Arial"><strong>mode = 3</strong></font><br>
+    <applet code="DorianGray_II.class" width="200" height="200">
+      <param name="image" value="exampl_n2.jpg">
+      <param name="mode" value="3">
+      <param name="sound" value="hiphop8.au">
+    </applet>
+    </td>
+    <td align="center"><font face="Arial"><strong>mode = 4</strong></font><br>
+    <applet code="DorianGray_II.class" width="200" height="200">
+      <param name="image" value="exampl_n2.jpg">
+      <param name="mode" value="4">
+      <param name="sound" value="hiphop8.au">
+    </applet>
+    </td>
+    <td align="center"><strong><font face="Arial">mode = 5</font></strong><br>
+    <applet code="DorianGray_II.class" width="200" height="200">
+      <param name="image" value="exampl_n2.jpg">
+      <param name="mode" value="5">
+      <param name="sound" value="hiphop8.au">
+    </applet>
+    </td>
+  </tr>
+</table>
+</center></div>
+
+<p align="center">&nbsp;</p>
+<div align="center"><center>
+
+<table border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td colspan="3" align="center"><a name="sped"><big><font face="Arial">The speed and frames
+    parameter</font></big></a><p align="left"><small><font face="Arial" color="#FFFF00">&lt;param
+    name=&quot;speed&quot; value=&quot;3&quot;&gt; </font><font face="Arial" color="#FFFFFF">(possible
+    1 to 5)</font></small><font face="Arial" color="#FFFF00"><br>
+    </font><font face="Arial" color="#FFFFFF"><small>If no speed parameter is specified,
+    default is mode is speed = 3 (no parameter tag required)</small></font></p>
+    <p align="left"><font face="Arial" color="#FFFF00"><small>&lt;param
+    name=&quot;frames&quot; value=&quot;12&quot;&gt;</small> </font><font face="Arial"
+    color="#FFFFFF"><small>(possible 9 to 14)</small></font><font face="Arial" color="#FFFF00"><br>
+    </font><font face="Arial" color="#FFFFFF"><small>If no frames parameter is specified,
+    default is mode is frames = 12 (no parameter tag required)</small></font></p>
+    <p align="left"><small><font face="Arial">All the examples are&nbsp; in <a
+    href="#The  6 reflection modes">reflexion mode</a> = 2</font></small></p>
+    <p align="left"><font face="Arial"><small>You can mix frames and speed but the more frames
+    you use the longer the applet needs to initialize.<br>
+    you should turn the framerate as low as possible and then adjust the speed.</small><br>
+    </font></td>
+  </tr>
+  <tr>
+    <td align="center"><font face="Arial"><strong>frames = 9</strong></font><br>
+    <applet code="DorianGray_II.class" width="200" height="200">
+      <param name="frames" value="9">
+      <param name="image" value="exampl_n2.jpg">
+      <param name="mode" value="2">
+    </applet>
+    </td>
+    <td align="center"><font face="Arial"><strong>frames = 11</strong></font><br>
+    <applet code="DorianGray_II.class" width="200" height="200">
+      <param name="frames" value="11">
+      <param name="image" value="exampl_n2.jpg">
+      <param name="mode" value="2">
+    </applet>
+    </td>
+    <td align="center"><strong><font face="Arial">frames = 14</font></strong><br>
+    <applet code="DorianGray_II.class" width="200" height="200">
+      <param name="frames" value="14">
+      <param name="image" value="exampl_n2.jpg">
+      <param name="mode" value="2">
+    </applet>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><font face="Arial"><strong>speed = 1</strong></font> <br>
+    <applet code="DorianGray_II.class" width="200" height="200">
+      <param name="image" value="exampl_n2.jpg">
+      <param name="mode" value="2">
+      <param name="speed" value="1">
+    </applet>
+    </td>
+    <td align="center"><font face="Arial"><strong>speed = 5</strong></font><br>
+    <applet code="DorianGray_II.class" width="200" height="200">
+      <param name="image" value="exampl_n2.jpg">
+      <param name="mode" value="2">
+      <param name="speed" value="5">
+    </applet>
+    </td>
+    <td align="center"><strong><font face="Arial">speed = 2</font></strong><br>
+    <applet code="DorianGray_II.class" width="200" height="200">
+      <param name="image" value="exampl_n2.jpg">
+      <param name="mode" value="2">
+      <param name="speed" value="2">
+    </applet>
+    </td>
+  </tr>
+</table>
+</center></div>
+
+<p>&nbsp;</p>
+<div align="center"><center>
+
+<table border="0" cellpadding="2" cellspacing="0">
+  <tr>
+    <td><p align="center"><a name="status"><strong><font face="Arial">The status bar messages</font></strong></a></p>
+    <p align="left"><font face="Arial" color="#FFFF00"><small>&lt;param
+    name=&quot;status&quot; value=&quot;Welcome to the Dorian Gray Applet II&quot;&gt;</small><br>
+    </font><font face="Arial"><font color="#FFFFFF"><small>The status parameter sets the
+    statusbar message when the applet is loaded the first time.</small><br>
+    <small>default :</small> <small>&quot;Welcome to the Dorian Gray Applet II</small></font>&quot;</font></p>
+    <p align="left"><font face="Arial"><font color="#FFFF00"><small>&lt;param
+    name=&quot;outtext&quot; value=&quot;Mail me if you like it ...&quot;&gt;</small></font><br>
+    <small>The outtext parameter sets the status bar message when the mouse leaves the applet.<br>
+    default: &quot;Mail me if you like it ....&quot;</small></font></p>
+    <p align="left"><font color="#FFFF00"><font face="Arial"><small>&lt;param
+    name=&quot;intext&quot; value=&quot;</small></font>Click me, and you might hear
+    something...</font><font face="Arial" color="#FFFF00"><small>&quot;&gt;</small></font><font
+    face="Arial"><br>
+    <small>The intext parameter sets the status bar message when the mouse is over the applet.<br>
+    default: <small>&quot;</small>Click me, and you might hear something...<small>&quot;</small></small><br>
+    <small>Attention this is disabled if the href parameter exists. It is automatically
+    replaced by the URL</small></font></p>
+    <p align="left"><font face="Arial"><font color="#FFFF00"><small>&lt;param
+    name=&quot;text&quot; value=&quot;Hey, why are you clicking me ?#?!...&quot;&gt;</small></font><br>
+    <small>The intext parameter sets the status bar message when the mouse is clicking the
+    applet.<br>
+    default: &quot;Hey, why are you clicking me ?#?!...&quot;</small><br>
+    <small>Attention this is disabled if the <a href="#link">href</a> parameter exists. It is
+    not replaced because you leave the applet very quickly.</small></font></td>
+  </tr>
+</table>
+</center></div>
+
+<p>&nbsp;</p>
+<div align="center"><center>
+
+<table border="0" cellpadding="2" cellspacing="0">
+  <tr>
+    <td><p align="center"><a name="sound"><strong><font face="Arial">The sound support</font></strong></a></p>
+    <p align="left"><font face="Arial"><font color="#FFFF00"><small>&lt;param
+    name=&quot;sound&quot; value=&quot;sound.au&quot;&gt;</small><br>
+    </font><small>The DorianGrayApplet supports *.au sounds. <font color="#FF0000">The sound
+    is deactivated</font> if the <a href="#link">href parameter</a> is specified. Why? Because<br>
+    I experienced some problems on slow servers. To get the sound to work, follow the
+    instructions below:<br>
+    1. to create a sound file take a wave file of your choice.&gt;<br>
+    2. load it in a sound editor. I use Goldwave. It's shareware and you can get it at tucows
+    (http://www.tucows.com).<br>
+    3. go to the menu &quot;effects&quot; and choose &quot;resample&quot;. resample the file
+    to 8khz (8000hz).<br>
+    4. goto the &quot;file&quot; menu choose &quot;save as&quot;.<br>
+    5. Select in &quot;Save file as type&quot;: Sun ( *.au)<br>
+    <font color="#FF0000">6. IMPORTANT: </font><font color="#FFFFFF">Then select in &quot;file
+    attributes&quot; (beneeth): ylaw mono (version 3.03) or &quot;web&quot; or
+    &quot;java&quot; for<br>
+    higher versions that don't have the uLaw setting anymore.!<br>
+    When troubelshooting, make shure you have resampled to 8000Hz or 8kHZ. There is a 5000Hz
+    setting that makes the file smaller</font><font color="#FF0000"> but it doesn't work!<br>
+    </font><font color="#FFFFFF">7. Write the exact path to your parameter value. The filename
+    only means it is in the same directory. Recomended.</font></small></font></td>
+  </tr>
+</table>
+</center></div>
+
+<p>&nbsp;</p>
+<div align="center"><center>
+
+<table border="0" cellpadding="2" cellspacing="0">
+  <tr>
+    <td><p align="center"><a name="link"><strong><font face="Arial">The href parameters</font></strong></a></p>
+    <p align="left"><font face="Arial" color="#FFFF00"><small>&lt;param name=&quot;href&quot;
+    value=&quot;http://yourserver.com/the_link_page.html&quot;&gt;</small><br>
+    </font><font face="Arial" color="#FFFFFF"><small>You can specify a link with this
+    parameter. Using the parameter disables <a href="#sound">sound</a> and the <a
+    href="#status">text</a> when you click the applet and</small><br>
+    <small>the text when you do a &quot;mouse over&quot;. The link is displayed instead so
+    people would know it is really a link and not just</small><br>
+    <small>a message.</small></font></p>
+    <p align="left"><font face="Arial" color="#FFFF00"><small>&lt;param
+    name=&quot;target&quot; value=&quot;_self&quot;&gt;</small><br>
+    </font><font face="Arial" color="#FFFFFF"><small>This parameter displays the link in a
+    specified target frame. (_self, _top etc...) default is &quot;_self&quot;</small></font><font
+    face="Arial" color="#FFFF00"><br>
+    </font></td>
+  </tr>
+</table>
+</center></div>
+
+<p align="center"><small><font face="Arial">[ <a
+href="#Reflection from images - Html syntax">Reflection from images</a> | <a
+href="#The basic parameters">Main params</a> | <a href="#The  6 reflection modes">Reflection
+modes</a> | <a href="#sped">Speed and frames</a> | <a href="#status">Status bar</a> | <a
+href="#sound">Sound</a> | <a href="#link">Links</a> ]</font></small></p>
+</body>
+</html>
